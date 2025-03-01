@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 import joblib
 
+
 model = joblib.load("newxG_modeldistance.pkl")
 
 def calculate_distance(x, y, goal_x=120, goal_y=40):
@@ -50,8 +51,8 @@ Model Training: The model was trained using a logistic regression approach, whic
 What the output means:         
 The xG prediction is a value between 0 and 1 that represents the likelihood of a goal being scored from a specific shot location. For example:
 
-An xG of 0.75 means the shot has a 75% chance of resulting in a goal.
-An xG of 0.05 means the shot has only a 5% chance of going in.
+An xG of 0.75 means the shot has a 75 percent chance of resulting in a goal.
+An xG of 0.05 means the shot has only a 5 percent chance of going in.
 The model is based on data from thousands of past football shots, so it provides a statistically informed prediction based on the position of the shot.
 
 Limitations
